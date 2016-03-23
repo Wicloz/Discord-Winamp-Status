@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1458745181 source:f:\projects\discord-winamp-status\winamp\playing.cpp
+	<windows.h>
+	"playing.h"
+
+1458744816 f:\projects\discord-winamp-status\winamp\playing.h
+	<windows.h>
+

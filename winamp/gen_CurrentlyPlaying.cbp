@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="gen_CurrentlyPlaying" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/libgen_CurrentlyPlaying" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="3" />
+				<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+				<ExtraCommands>
+					<Add after='cmd /c del &quot;C:\Program Files (x86)\Winamp\Plugins\gen_currentlyplaying.dll&quot;' />
+					<Add after='cmd /c copy &quot;F:\Projects\Discord-Winamp-Status\winamp\bin\Release\libgen_CurrentlyPlaying.dll&quot; &quot;C:\Program Files (x86)\Winamp\Plugins\gen_currentlyplaying.dll&quot;' />
+					<Mode after="always" />
+				</ExtraCommands>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="playing.cpp" />
+		<Unit filename="playing.h" />
+		<Unit filename="wa_ipc.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
